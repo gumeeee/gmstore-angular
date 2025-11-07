@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
+import { Catnavigation } from './components/catnavigation/catnavigation';
 import { Header } from './components/header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [Header],
+  imports: [Header, Catnavigation],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
