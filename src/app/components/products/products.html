@@ -14,6 +14,12 @@
         <a href="#" class="text-black hover:text-black no-underline">{{ product.product_name }}</a>
       </h5>
       <p class="text-base font-normal mt-1">{{ product.price | currency }}</p>
+
+      @if (product.ratings > 0) {
+      <ng-container>
+        <app-ratings [score]="product.ratings"></app-ratings>
+      </ng-container>
+      }
     </div>
   </div>
   }
